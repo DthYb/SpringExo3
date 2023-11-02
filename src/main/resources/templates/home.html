@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+</head>
+<body>
+<h1>Home page</h1>
+<hr>
+<!-- <a th:href="@{/second}">Liens page B</a> -->
+
+<th:block th:fragment="paragraphe">
+<p> Bienvenue sur la page Home</p>
+<img class="wlimage" src="https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202332/0239/classic-welcome-doormat-l.jpg"/>
+</th:block>
+<!-- <a th:href="@{/person(personName='titi',paramB=45)}">lien page person</a> -->
+</body>
+</html>
